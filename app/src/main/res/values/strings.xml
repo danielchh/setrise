@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SetRise</string>
+    <string name="sunrise_at">sunrise at :</string>
+    <string name="sunset_at">: sunset at</string>
+    <string name="in_city">in %1$s</string>
+    <string name="in_my_city">in my city</string>
+    <string name="my_location">my location</string>
+    <string name="in_any_city">in any city</string>
+    <string name="city">City</string>
+    <string name="no_results">Oops! Looks like there is no such city</string>
+    <string name="no_connection">Please, connect to internet first</string>
+    <string name="unexpected_error">Unexpected error</string>
+</resources>

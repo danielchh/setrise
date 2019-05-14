@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#39A8F8</color>
+    <color name="colorPrimaryDark">#3187BE</color>
+    <color name="colorAccent">#F0B31F</color>
+
+    <color name="grayTransluent">#57665D60</color>
+
+    <color name="daylightStart">#1C3241</color>
+    <color name="daylightMiddle">#39A8F8</color>
+    <color name="daylightEnd">#F0B31F</color>
+
+    <color name="blackText">#E6000000</color>
+    <color name="whiteText">#E6FFFFFF</color>
+
+    <color name="grayDivider">#E6727272</color>
+
+</resources>
