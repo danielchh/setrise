@@ -10,4 +10,5 @@
     <string name="no_results">Oops! Looks like there is no such city</string>
     <string name="no_connection">Please, connect to internet first</string>
     <string name="unexpected_error">Unexpected error</string>
+    <string name="error_fetching_location">Wasn\'t able to retrieve your location</string>
 </resources>

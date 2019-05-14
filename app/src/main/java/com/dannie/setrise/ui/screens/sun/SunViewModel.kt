@@ -40,12 +40,20 @@ class SunViewModel(application: Application) : BaseViewModel(application) {
             fusedLocationClient.lastLocation
                 .addOnSuccessListener {
                     fetchedInitial = true
-                    getInfoForLocation(it.latitude, it.longitude)
+                    // had issue when location is null here somehow
+                    if (it == null) {
+                        showLocationFetchError()
+                    } else {
+                        getInfoForLocation(it.latitude, it.longitude)
+                    }
                 }
-                .addOnFailureListener {
-                    screenState.postValue(ScreenState.FAILURE)
-                }
+                .addOnFailureListener { showLocationFetchError() }
         }
+    }
+
+    private fun showLocationFetchError() {
+        showWarning(R.string.error_fetching_location)
+        screenState.postValue(ScreenState.FAILURE)
     }
 
     fun getInfoForLocation(lat: Double, lon: Double) {
